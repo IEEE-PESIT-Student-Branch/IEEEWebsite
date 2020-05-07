@@ -1,36 +1,65 @@
 <html>
-
-<head>
+  <head>
     <title>IEEE PESIT South Student Branch</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="sa"></div>
     <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
-        </label>
-        <div>
-            <img src="assets/pesitieee.png" class="logo">
-            <!-- <label class="logo">IEEE</label> -->
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/events">Events</a></li>
-                <li><a href="/execom">Execom</a></li>
-                <li><a href="/faq">FAQ's</a></li>
-            </ul>
-        </div>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+      <div>
+        <img src="assets/pesitieee.png" class="logo" />
+        <!-- <label class="logo">IEEE</label> -->
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/events">Events</a></li>
+          <li><a href="/execom">Execom</a></li>
+          <li><a href="/faq">FAQ's</a></li>
+        </ul>
+      </div>
     </nav>
-    <div id="slider">
-        <div class="slidercontainer">
-            <div id="mob1" class="mobdiv"></div>
-            <div id="mob2" class="mobdiv"></div>
-            <div id="mob3" class="mobdiv"></div>
-        </div>
-    </div>
-</body>
 
+    <!-- <div id="slider">
+      <div class="slidercontainer">
+        <div id="mob1" class="mobdiv"></div>
+        <div id="mob2" class="mobdiv"></div>
+        <div id="mob3" class="mobdiv"></div>
+      </div>
+    </div> -->
+
+    <section class="banner"></section>
+    <script type="text/javascript">
+      window.addEventListener('scroll', function () {
+        var header = document.querySelector('nav');
+        header.classList.toggle('sticky', window.scrollY > 0);
+      });
+    </script>
+    <section>
+      <h2>WWF</h2>
+      <p>
+        The World Wide Fund for Nature (WWF) is an international organization
+        working on issues regarding the conservation, research and restoration
+        of the environment, formerly named the World Wildlife Fund. WWF was
+        founded in 1961.
+      </p>
+    </section>
+    <section>
+      <h2>WWF's Panda symbol</h2>
+      <p>
+        The Panda has become the symbol of WWF. The well-known panda logo of WWF
+        originated from a panda named Chi Chi that was transferred from the
+        Beijing Zoo to the London Zoo in the same year of the establishment of
+        WWF.
+      </p>
+    </section>
+  </body>
 </html>
