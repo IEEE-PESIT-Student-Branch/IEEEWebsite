@@ -5,6 +5,14 @@ window.addEventListener('scroll', function () {
   header.classList.toggle('sticky', window.scrollY > 0.7 * height);
 });
 
+window.addEventListener('keydown', function (e) {
+  if (e.code == 'ArrowLeft') {
+    arrowClicked(-1);
+  } else if (e.code == 'ArrowRight') {
+    arrowClicked(+1);
+  }
+});
+
 msliderprops = [
   {
     color: '#419dce',
@@ -56,9 +64,18 @@ function handleSlider(n) {
     d.classList.remove('active');
   }
   dots[slideIndex - 1].classList.add('active');
-  // document.getElementsByClassName('slidercontainer')[0].style.left =
-  //   offset + '%';
-
+  document.getElementsByClassName('slidercontainer')[0].style.left =
+    offset + '%';
+  var right = document.getElementsByClassName('right-section')[0];
+  if (slideIndex == 2) {
+    right.style.background = '#419DCE';
+  }
+  if (slideIndex == 1) {
+    right.style.background = 'yellow';
+  }
+  if (slideIndex == 3) {
+    right.style.background = 'green';
+  }
   //Mobile
   var area = document.getElementsByClassName('m-pagination-progress-bar');
   document.getElementsByClassName('mslidercontainer')[0].style.left =
