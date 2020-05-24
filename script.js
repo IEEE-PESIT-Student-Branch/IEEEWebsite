@@ -56,17 +56,16 @@ function handleSlider(n) {
     d.classList.remove('active');
   }
   dots[slideIndex - 1].classList.add('active');
-  document.getElementsByClassName('slidercontainer')[0].style.left =
-    offset + '%';
-  document.getElementsByClassName('mslidercontainer')[0].style.left =
-    offset + '%';
+  // document.getElementsByClassName('slidercontainer')[0].style.left =
+  //   offset + '%';
 
   //Mobile
   var area = document.getElementsByClassName('m-pagination-progress-bar');
+  document.getElementsByClassName('mslidercontainer')[0].style.left =
+    offset + '%';
   if (area) {
     area[0].style.width = slideIndex * (100 / 3) + '%';
   }
-  var logo = document.getElementsByClassName('m-logo');
 
   var logos = document.getElementsByClassName('card');
 
@@ -89,10 +88,7 @@ function handleSlider(n) {
   desc[0].innerHTML = msliderprops[slideIndex - 1].desc;
 }
 
-var slider = setInterval(function () {
-  plusDivs(+1);
-}, 2000);
-
+// Set the visibilty and transistion of icons
 function setTransform(element, translate, rotate) {
   var transfromString =
     'translateX(' + translate + '%) rotateY(' + rotate + 'deg )';
@@ -106,3 +102,7 @@ function setTransform(element, translate, rotate) {
   }
   if (translate == 0) element.style.visibility = 'visible';
 }
+
+var slider = setInterval(function () {
+  plusDivs(+1);
+}, 2000);

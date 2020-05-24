@@ -12,7 +12,7 @@ body {
   width: 100%;
 }
 
-.banner {
+/* .banner {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -20,7 +20,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
-}
+} */
 
 nav {
   margin-top: 40px;
@@ -80,7 +80,9 @@ nav ul li a {
   font-family: 'Lucida Sans Regular', sans-serif;
   color: rgb(191, 191, 191);
 }
-
+.mslider {
+  display: none;
+}
 .checkbtn {
   color: white;
   font-size: 2.3rem;
@@ -103,14 +105,16 @@ nav ul li a:hover {
 section {
   width: 100%;
   height: 100vh;
-  grid-auto-rows: auto;
 }
 
 .slider {
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
   display: grid;
+  background: rgb(41, 39, 42);
   grid-template-rows: 1fr 80px;
 }
 
@@ -118,10 +122,48 @@ section {
   grid-area: 1/1/3/2;
   position: relative;
   left: 0%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   width: 300%;
+  margin: 0;
+  padding: 0;
   height: 100%;
-  display: flex;
   transition: all 0.5s;
+}
+
+.pcdiv {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 60% 1fr;
+}
+
+#pc1 {
+  grid-area: 1/1/2/2;
+}
+
+#pc2 {
+  grid-area: 1/2/2/3;
+}
+
+#pc3 {
+  grid-area: 1/3/2/4;
+}
+
+.right-section {
+  width: 100%;
+  height: 100%;
+  background: yellow;
+  transition: all 1s;
+  grid-area: 1/1/3/2;
+  clip-path: polygon(60% 0, 100% 0, 100% 100%, 70% 100%);
+}
+
+.pcdiv .pc-circle {
+  grid-area: 1/2/2/3;
+  z-index: 3;
+  width: 45%;
+  margin: auto;
+  transform: translate(-65%, 0);
 }
 
 .mslidercontainer {
@@ -167,7 +209,47 @@ section {
 .active {
   background: white;
 }
+.event-content {
+  color: white;
+  grid-area: 1/1/2/2;
+  margin-top: 100px;
+  margin-left: 2em;
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.event-content h1 {
+  margin-bottom: 10px;
+  font-size: 5rem;
+  text-transform: uppercase;
+  mix-blend-mode: difference;
+}
+
+.event-content .event-caption {
+  font-weight: bold;
+  font-size: 3rem;
+  font-style: italic;
+  mix-blend-mode: difference;
+}
+
+.event-content .event-desc {
+  padding: 1em 2em;
+  font-size: 1.2rem;
+  text-align: justify;
+  mix-blend-mode: difference;
+}
+
+.event-content button {
+  padding: 1em 3em;
+  background: orange;
+  border: none;
+  border-radius: 20px;
+  margin-top: 1em;
+  mix-blend-mode: difference;
+}
 @media (max-width: 858px) {
   .logo {
     margin-left: 1em;
@@ -225,7 +307,7 @@ section {
     top: 0;
   }
 
-  .slider {
+  .mslider {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -234,7 +316,7 @@ section {
     grid-template-columns: 1fr;
   }
 
-  .slidercontainer {
+  .pcslider {
     display: none;
   }
 
@@ -360,18 +442,10 @@ section {
     color: black;
     font-family: 'Lucida Sans Regular', sans-serif;
   }
-  .view-button {
-    height: 50px;
-    width: 100px;
-    grid-area: 3/1/4/2;
+
+  .mview-button {
+    align-self: center;
     justify-self: center;
-    border-radius: 23px;
-    border: none;
-    font-size: 0.9rem;
-    color: black;
-    font-family: 'Lucida Sans Regular', sans-serif;
-  }
-  .view-button {
     border-radius: 32px;
     font-size: 14px;
     height: 45px;
