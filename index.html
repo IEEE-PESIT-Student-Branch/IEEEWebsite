@@ -1,64 +1,108 @@
 <html>
+  <head>
+    <title>IEEE PESIT South Student Branch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <title>IEEE PESIT South Student Branch</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <div class="sa"></div>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+      <div>
+        <img src="assets/pesitieee.png" class="logo" />
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/events">Events</a></li>
+          <li><a href="/execom">Execom</a></li>
+          <li><a href="/faq">FAQ's</a></li>
+        </ul>
+      </div>
+    </nav>
 
-<body>
-  <div class="sa"></div>
-  <nav>
-    <input type="checkbox" id="check" />
-    <label for="check" class="checkbtn">
-      <i class="fa fa-bars"></i>
-    </label>
-    <div>
-      <img src="assets/pesitieee.png" class="logo" />
-      <!-- <label class="logo">IEEE</label> -->
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/events">Events</a></li>
-        <li><a href="/execom">Execom</a></li>
-        <li><a href="/faq">FAQ's</a></li>
-      </ul>
-    </div>
-  </nav>
+    <section class="slider">
+      <div class="slidercontainer">
+        <div id="mob1" class="mobdiv"><img src="assets/chicago.jpg" /></div>
+        <div id="mob2" class="mobdiv"><img src="assets/la.jpg" /></div>
+        <div id="mob3" class="mobdiv"><img src="assets/ny.jpg" /></div>
+      </div>
 
-  <section class="slider">
-    <div class="slidercontainer">
-      <div id="mob1" class="mobdiv"><img src="assets/chicago.jpg"></div>
-      <div id="mob2" class="mobdiv"><img src="assets/la.jpg"></div>
-      <div id="mob3" class="mobdiv"><img src="assets/ny.jpg"></div>
-    </div>
-    <div class="pagination-container">
-      <span onclick="arrowClicked(-1)"><i class="fa fa-arrow-left slider-arrow"></i></span>
-      <div class="pagination-dot active"></div>
-      <div class="pagination-dot"></div>
-      <div class="pagination-dot"></div>
-      <span onclick="arrowClicked(+1)"><i class="fa fa-arrow-right slider-arrow"></i></span>
-    </div>
-  </section>
-  <section>
-    <h2>WWF</h2>
-    <p>
-      The World Wide Fund for Nature (WWF) is an international organization
-      working on issues regarding the conservation, research and restoration
-      of the environment, formerly named the World Wildlife Fund. WWF was
-      founded in 1961.
-    </p>
-  </section>
-  <section>
-    <h2>WWF's Panda symbol</h2>
-    <p>
-      The Panda has become the symbol of WWF. The well-known panda logo of WWF
-      originated from a panda named Chi Chi that was transferred from the
-      Beijing Zoo to the London Zoo in the same year of the establishment of
-      WWF.
-    </p>
-  </section>
-  <script src="script.js"></script>
-</body>
+      <!-- Mobile bg slider -->
+      <div class="mslidercontainer">
+        <div id="mob1" class="mobdiv"><img src="assets/bgpro-01.png" /></div>
+        <div id="mob2" class="mobdiv"><img src="assets/kalpana-02.png" /></div>
+        <div id="mob3" class="mobdiv"><img src="assets/bgpro-01.png" /></div>
+      </div>
 
+      <!-- Lower half bg -->
+      <div class="landingBottom">
+        <div class="btmhalf"></div>
+      </div>
+      <!-- Mobile pagination -->
+      <div class="m-pagination-container">
+        <span class="left-arrow" onclick="arrowClicked(-1)"
+       ><img src = "/assets/arrow2.svg" class="arrow-left slider-arrow"></i
+        ></span>
+        <span class="right-arrow" onclick="arrowClicked(+1)">
+          <img src = "/assets/arrow2.svg" class="arrow-right slider-arrow"></i
+        ></span>
+        
+        <!-- Logos to Change -->
+        <div class="m-logo">     
+          <img src="assets/icon.svg" class="shadow card" />
+          <img src="assets/logo3.png" class="shadow card"/>
+          <img src="assets/mic.svg" class="shadow card" />
+        </div>
+        <!-- Progress bar -->
+        <div class="m-pagination-progress-bar"></div>
+        <!-- Text Description -->
+        <div class="text-area">
+          <p class="title">SPEAK UP</p>
+          <p class="desc">
+            fafsdfa fsd f as fd sd fs d fa sdf asd f sad fsd af asdf sdf sd fsda
+            f sd fsd afs dfsd sdfa f sdfsd f a sdf fsd sdf sdf sdf
+          </p>
+          <button class="view-button">View More</button>
+        </div>
+      </div>
+
+      <div class="pagination-container">
+        <span onclick="arrowClicked(-1)"
+          ><i class="fa fa-arrow-left slider-arrow"></i
+        ></span>
+        <div class="pagination-dot active"></div>
+        <div class="pagination-dot"></div>
+        <div class="pagination-dot"></div>
+        <span onclick="arrowClicked(+1)"
+          ><i class="fa fa-arrow-right slider-arrow"></i
+        ></span>
+      </div>
+    </section>
+    <section>
+      <h2>WWF</h2>
+      <p>
+        The World Wide Fund for Nature (WWF) is an international organization
+        working on issues regarding the conservation, research and restoration
+        of the environment, formerly named the World Wildlife Fund. WWF was
+        founded in 1961.
+      </p>
+    </section>
+    <section>
+      <h2>WWF's Panda symbol</h2>
+      <p>
+        The Panda has become the symbol of WWF. The well-known panda logo of WWF
+        originated from a panda named Chi Chi that was transferred from the
+        Beijing Zoo to the London Zoo in the same year of the establishment of
+        WWF.
+      </p>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
