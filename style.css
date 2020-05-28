@@ -41,7 +41,7 @@ nav.sticky .logo {
 nav.sticky {
   margin-top: 0px;
   top: 0px;
-  font-size: 0.75rem;
+  /* font-size: 0.75rem; */
   padding-left: 2em;
   height: 75px;
   background: rgb(41, 39, 42);
@@ -88,7 +88,7 @@ nav ul li a {
   font-size: 2.3rem;
   float: right;
   right: 25px;
-  top: 25px;
+  top: 19.1px;
   display: none;
   position: absolute;
   z-index: 11;
@@ -262,6 +262,10 @@ section {
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  nav.sticky {
+    padding-left: 0px;
   }
 
   nav div ul {
@@ -458,5 +462,53 @@ section {
     font-weight: 100;
     border: 1px solid #000;
     box-shadow: 2px 2px 5px #000000;
+  }
+}
+
+/* ABOUT US */
+
+.about-us-section {
+  width: 80%;
+  height: fit-content;
+  margin: auto;
+  padding: 1em 0em;
+}
+
+.about-us-section h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.card-container {
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.about-us-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  padding: 1em 0.7em;
+  box-shadow: 10px 10px 20px 1px;
+}
+
+.about-us-card img {
+  width: 30%;
+}
+
+@media (max-width: 500px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us-card {
+    width: 85%;
+    margin-bottom: 2em;
   }
 }

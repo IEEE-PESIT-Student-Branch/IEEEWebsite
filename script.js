@@ -2,7 +2,7 @@ window.addEventListener('scroll', function () {
   var header = document.querySelector('nav');
   var height = window.innerHeight;
   var width = window.innerWidth;
-  header.classList.toggle('sticky', window.scrollY > 0.7 * height);
+  header.classList.toggle('sticky', window.scrollY > 0.20 * height);
 });
 
 window.addEventListener('keydown', function (e) {
