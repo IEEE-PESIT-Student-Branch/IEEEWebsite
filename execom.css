@@ -12,7 +12,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: rgb(190, 194, 200);
+  background-color: white;
 }
 
 /* NAVBAR */
@@ -110,6 +110,8 @@ nav ul li a:hover {
   flex-direction: row;
   align-items: stretch;
   flex-wrap: wrap;
+  padding: 0px 10%;
+  justify-content: center;
 }
 
 .photo-card {
@@ -118,35 +120,43 @@ nav ul li a:hover {
   flex-direction: column;
   align-items: center;
   background: white;
-  width: calc(20% - 50px);
+  width: calc((100% / 5) - 0px);
   /* height: 30%; */
   justify-content: space-around;
-  margin: 10px 25px;
+  /* margin: 10px 25px; */
+}
+
+.photo-card:hover {
+  background: rgba(206, 206, 206, 0.452);
+  border-radius: 20px;
 }
 
 .execom-pic {
-  width: 100%;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
 }
 
 .execom-name {
   margin: 10px 0;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .execom-pos {
   font-weight: normal;
   font-style: italic;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 1380px) {
   .photo-card {
-    width: calc(25% - 50px);
+    width: calc(25% - 0px);
   }
 }
 
 @media (max-width: 1100px) {
   .photo-card {
-    width: calc((100% / 3) - 50px);
+    width: calc((100% / 3) - 0px);
   }
 }
 
@@ -204,6 +214,11 @@ nav ul li a:hover {
     padding: 20px 25px;
   }
 
+  nav.sticky ul li a {
+    font-size: 1.1rem;
+    padding: 20px 25px;
+  }
+
   .checkbtn {
     display: block;
   }
@@ -214,7 +229,7 @@ nav ul li a:hover {
 
   /* STUDENT SECTION */
   .photo-card {
-    width: calc(50% - 50px);
+    width: calc(50% - 0px);
   }
 }
 
@@ -226,6 +241,12 @@ nav ul li a:hover {
   }
   .photo-card {
     width: calc(100% - 75px);
+  }
+
+  .execom-pic {
+    width: 200px;
+    height: 200px;
+    transition: all 1s;
   }
 }
 

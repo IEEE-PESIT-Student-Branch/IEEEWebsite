@@ -268,6 +268,11 @@ section {
     padding-left: 0px;
   }
 
+  nav.sticky ul li a {
+    font-size: 1.1rem;
+    padding: 20px 25px;
+  }
+
   nav div ul {
     background: darkslategray;
     margin-top: 5px;
@@ -471,7 +476,7 @@ section {
   width: 80%;
   height: fit-content;
   margin: auto;
-  padding: 1em 0em;
+  padding: 2em 0em;
 }
 
 .about-us-section h2 {
@@ -511,4 +516,10 @@ section {
     width: 85%;
     margin-bottom: 2em;
   }
+}
+
+/* FOOTER */
+footer {
+  background: green;
+  height: 300px;
 }
