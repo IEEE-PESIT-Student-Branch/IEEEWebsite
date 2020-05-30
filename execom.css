@@ -36,7 +36,6 @@ nav.sticky .logo {
 nav.sticky {
   margin-top: 0px;
   top: 0px;
-  font-size: 0.75rem;
   padding-left: 2em;
   height: 75px;
   background: rgb(41, 39, 42);
@@ -81,7 +80,7 @@ nav ul li a {
   font-size: 2.3rem;
   float: right;
   right: 25px;
-  top: 25px;
+  top: 19.1px;
   display: none;
   position: absolute;
   z-index: 11;
@@ -246,7 +245,6 @@ nav ul li a:hover {
   .execom-pic {
     width: 200px;
     height: 200px;
-    transition: all 1s;
   }
 }
 

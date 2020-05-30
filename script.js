@@ -68,10 +68,10 @@ function handleSlider(n) {
     offset + '%';
   var right = document.getElementsByClassName('right-section')[0];
   if (slideIndex == 2) {
-    right.style.background = '#419DCE';
+    right.style.background = 'yellow';
   }
   if (slideIndex == 1) {
-    right.style.background = 'yellow';
+    right.style.background = "#419DCE";
   }
   if (slideIndex == 3) {
     right.style.background = 'green';

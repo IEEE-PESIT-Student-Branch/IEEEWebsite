@@ -225,21 +225,21 @@ section {
   margin-bottom: 10px;
   font-size: 5rem;
   text-transform: uppercase;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 
 .event-content .event-caption {
   font-weight: bold;
   font-size: 3rem;
   font-style: italic;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 
 .event-content .event-desc {
   padding: 1em 2em;
   font-size: 1.2rem;
   text-align: justify;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 
 .event-content button {
@@ -248,7 +248,7 @@ section {
   border: none;
   border-radius: 20px;
   margin-top: 1em;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 @media (max-width: 858px) {
   .logo {
