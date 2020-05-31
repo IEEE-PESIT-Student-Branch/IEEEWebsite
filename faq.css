@@ -57,6 +57,7 @@
   background-color: #a4b4d8;
   transition: max-height 0.5s;
   color: black;
+  border-left: 5px solid red
 }
 
 .faq-answer::before {
