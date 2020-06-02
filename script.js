@@ -42,7 +42,7 @@ function arrowClicked(n) {
   clearInterval(slider);
   slider = setInterval(function () {
     plusDivs(+1);
-  }, 2000);
+  }, 4000);
   plusDivs(n);
 }
 
@@ -67,14 +67,24 @@ function handleSlider(n) {
   document.getElementsByClassName('slidercontainer')[0].style.left =
     offset + '%';
   var right = document.getElementsByClassName('right-section')[0];
+  var image = document.getElementsByClassName('right-bg-image');
   if (slideIndex == 2) {
-    right.style.background = 'yellow';
+    // right.style.background = 'yellow';
+    image[0].style.opacity = 0;
+    image[2].style.opacity = 0;
+    image[1].style.opacity = 1;
   }
   if (slideIndex == 1) {
-    right.style.background = "#419DCE";
+    // right.style.background = "#419DCE";
+    image[0].style.opacity = 1;
+    image[2].style.opacity = 0;
+    image[1].style.opacity = 0;
   }
   if (slideIndex == 3) {
-    right.style.background = 'green';
+    image[0].style.opacity = 0;
+    image[2].style.opacity = 1;
+    image[1].style.opacity = 0;
+    // right.style.background = 'green';
   }
   //Mobile
   var area = document.getElementsByClassName('m-pagination-progress-bar');
@@ -122,4 +132,4 @@ function setTransform(element, translate, rotate) {
 
 var slider = setInterval(function () {
   plusDivs(+1);
-}, 2000);
+}, 4000);

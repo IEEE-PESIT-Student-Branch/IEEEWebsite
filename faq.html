@@ -3,6 +3,7 @@
 <head>
     <title>Frequently Asked Questions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="faq.css" />
@@ -15,7 +16,7 @@
             <i class="fa fa-bars"></i>
         </label>
         <div>
-            <a href="/"><img src="assets/pesitieee.png" class="logo" /></a> 
+            <a href="/"><img src="assets/pesitieee.png" class="logo" /></a>
             <!-- <label class="logo">IEEE</label> -->
             <ul>
                 <li><a href="/">Home</a></li>
@@ -27,19 +28,44 @@
             </ul>
         </div>
     </nav>
-    <div class="faq-bg">
-        <h1 class="faq-header">Frequently Asked Questions</h1>
-    </div>
+    <!-- <div class="faq-bg"> -->
+    <h1 class="faq-header">Frequently Asked Questions</h1>
+    <!-- </div> -->
     <section class="faq-section">
         <div class="faq-container">
-            <div class="faq-accordion">
+            <div class="tabs">
+                <div class="tab">
+                    <input type="checkbox" id="chck1">
+                    <label class="tab-label" for="chck1">What is IEEE?</label>
+                    <div class="tab-content">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+                    </div>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" id="chck2">
+                    <label class="tab-label" for="chck2">Should I get Membership?</label>
+                    <div class="tab-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+                    </div>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" id="chck3">
+                    <label class="tab-label" for="chck3">How much is the membership?</label>
+                    <div class="tab-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="faq-accordion">
                 <div class="faq-accordion-item" id="q1">
                     <a class="faq-accordion-link" href="#q1">What are the benefits of IEEE Membership?</a>
                     <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
                         consequuntur totam eaque cupiditate animi quisquam, velit sapiente ratione quo quae! Laudantium
                         soluta nisi alias quis corrupti, repellendus veritatis assumenda quasi.</div>
                 </div>
-                <!-- <div class="faq-accordion-item" id="q2">
+                <div class="faq-accordion-item" id="q2">
                     <a class="faq-accordion-link" href="#q2">What are the benefits of IEEE Membership?</a>
                     <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
                         consequuntur totam eaque cupiditate animi quisquam, velit sapiente ratione quo quae! Laudantium
@@ -51,7 +77,6 @@
                         consequuntur totam eaque cupiditate animi quisquam, velit sapiente ratione quo quae! Laudantium
                         soluta nisi alias quis corrupti, repellendus veritatis assumenda quasi.</div>
                 </div> -->
-            </div>
         </div>
     </section>
     <script src="faq.js"></script>

@@ -12,7 +12,12 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: white;
+  /* background-color: white; */
+  background-image: url("assets/faqbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* NAVBAR */
@@ -38,12 +43,12 @@ nav.sticky {
   top: 0px;
   padding-left: 2em;
   height: 75px;
-  background: rgb(41, 39, 42);
+  background: rgba(30, 28, 31,0.7);
 }
 nav.sticky ul li a {
   position: relative;
   padding: 15px 60px;
-  font-size: 0.73rem;
+  font-size: 0.95rem;
   font-family: 'Lucida Sans Regular', sans-serif;
   color: rgb(191, 191, 191);
 }
@@ -70,7 +75,7 @@ nav ul {
 nav ul li a {
   position: relative;
   padding: 15px 60px;
-  font-size: 0.73rem;
+  font-size: 0.95rem;
   font-family: 'Lucida Sans Regular', sans-serif;
   color: rgb(191, 191, 191);
 }
@@ -97,10 +102,16 @@ nav ul li a:hover {
 /* STUDENT GRID */
 
 .student-section {
-  margin: 1em 0em;
-  margin-top: calc(75px + 1em);
+  margin-bottom: 1em;
+  padding-top: calc(75px + 1em);
+  margin-top: 0;
   text-align: center;
   font-size: 2rem;
+}
+
+.student-section h1{
+  color: white;
+  font-weight: 700;
 }
 
 .photo-grid {
@@ -118,7 +129,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: white;
+  /* background: white; */
   width: calc((100% / 5) - 0px);
   /* height: 30%; */
   justify-content: space-around;
@@ -126,7 +137,7 @@ nav ul li a:hover {
 }
 
 .photo-card:hover {
-  background: rgba(206, 206, 206, 0.452);
+  background: rgba(104, 104, 104, 0.233);
   border-radius: 20px;
 }
 
@@ -137,6 +148,7 @@ nav ul li a:hover {
 }
 
 .execom-name {
+  color: rgb(137, 197, 177);
   margin: 10px 0;
   font-size: 1.6rem;
 }
@@ -145,6 +157,7 @@ nav ul li a:hover {
   font-weight: normal;
   font-style: italic;
   font-size: 1.2rem;
+  color: #EEEEEE;
 }
 
 @media (max-width: 1380px) {

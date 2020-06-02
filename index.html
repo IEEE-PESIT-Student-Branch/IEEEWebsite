@@ -3,6 +3,7 @@
 <head>
   <title>IEEE PESIT South Student Branch</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -27,7 +28,11 @@
 
   <section class="pcslider">
     <div class="slider">
-      <div class="right-section"></div>
+      <div class="right-section">
+        <img class="right-bg-image" style="transform: scale(-1, 1);" src="assets/sample4.jpg">
+        <img class="right-bg-image" src="assets/sample5.jpg">
+        <img class="right-bg-image" src="assets/sample3.jpg">
+      </div>
       <div class="slidercontainer">
         <div id="pc1" class="pcdiv">
           <div class="event-content">
@@ -60,18 +65,18 @@
               recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             <button>REGISTER NOW</button>
           </div>
-          <img class="pc-circle" src="assets/mic.svg">
+          <!-- <img class="pc-circle" src="assets/mic.svg"> -->
         </div>
         <div id="pc3" class="pcdiv">
           <!-- <img class="pc-circle" src="assets/noodle.png"> -->
         </div>
       </div>
       <div class="pagination-container">
-        <span onclick="arrowClicked(-1)"><i class="fa fa-arrow-left slider-arrow"></i></span>
+        <span onclick="arrowClicked(-1)"><img class="slider-arrow" src="assets/arrow2white.svg"></span>
         <div class="pagination-dot active"></div>
         <div class="pagination-dot"></div>
         <div class="pagination-dot"></div>
-        <span onclick="arrowClicked(+1)"><i class="fa fa-arrow-right slider-arrow"></i></span>
+        <span onclick="arrowClicked(+1)"><img class="right-slider-arrow" src="assets/arrow2white.svg"></span>
       </div>
     </div>
   </section>
@@ -129,23 +134,30 @@
     <h2>About Us</h2>
     <div class="card-container">
       <div class="about-us-card">
-        <img src="assets/la.jpg">
-        <h3>Our Mission</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ipsa architecto eius, facilis eveniet cumque
-          dolores sunt quasi quaerat esse optio, delectus voluptas vel magnam facere! Quae nobis modi ex?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ipsa architecto eius, facilis eveniet cumque
-          dolores sunt quasi quaerat esse optio, delectus voluptas vel magnam facere! Quae nobis modi ex?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ipsa architecto eius, facilis eveniet cumque
-          dolores sunt quasi quaerat esse optio, delectus voluptas vel magnam facere! Quae nobis modi ex?</p>
+        <!-- <img src="assets/la.jpg"> -->
+        <h3>About PES</h3>
+        <p>PES was established in 1972 at Bangalore, the 
+Silicon Valley of India. The mission of PES is to 
+provide students with a sense of history, 
+understanding of values and ethics, a 
+commitment to law & morality, an appreciation
+of human creativity and an inquisitive mind.
+Every activity at PES is focused on addressing student needs. It offers and facilitates academic excellence, leadership qualities, nurturing environment, and cutting edge infrastructure – everything students need to succeed.</p>
       </div>
       <div class="about-us-card">
-        <img src="assets/la.jpg">
-        <h3>Our Mission</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ipsa architecto eius, facilis eveniet cumque
-          dolores sunt quasi quaerat esse optio, delectus voluptas vel magnam facere! Quae nobis modi ex?</p>
+        <!-- <img src="assets/la.jpg"> -->
+        <h3>About IEEE</h3>
+        <p>IEEE PESU South Campus Student Branch provides
+        an environment to foster learning and developing
+        real world skills.We ensure that our principles are
+        inline with the collective goal of encouraging the
+        students to make use of their diverse talents to
+        innovate for the benefit of humanity. Various events are targeted at improving the skill sets of the students and to
+        motivate them. We have devoted ourselves to instill a scientific temperament in the student community whilst
+        contributing towards the greater good of the global engineering community.</p>
       </div>
       <div class="about-us-card">
-        <img src="assets/la.jpg">
+        <!-- <img src="assets/la.jpg"> -->
         <h3>Our Mission</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ipsa architecto eius, facilis eveniet cumque
           dolores sunt quasi quaerat esse optio, delectus voluptas vel magnam facere! Quae nobis modi ex?</p>
@@ -203,16 +215,16 @@
     <div class="footer-right">
 
       <p class="footer-company-about">
-        <span>Follow Us on:</span>
+        <span>Follow Us On:</span>
         <!-- Web Dev Trick is a blog for web designers, graphic designers, web developers &amp; SEO Learner. -->
       </p>
 
       <div class="footer-icons">
 
         <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
+        <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
         <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-github"></i></a>
+        <!-- <a href="#"><i class="fa fa-github"></i></a> -->
         <a href="#"><i class="fa fa-instagram"></i></a>
       </div>
 

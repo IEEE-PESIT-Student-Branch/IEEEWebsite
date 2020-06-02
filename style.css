@@ -10,6 +10,9 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background: white;
+  color: black;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* .banner {
@@ -44,12 +47,12 @@ nav.sticky {
   /* font-size: 0.75rem; */
   padding-left: 2em;
   height: 75px;
-  background: rgb(41, 39, 42);
+  background: rgb(30, 28, 31);
 }
 nav.sticky ul li a {
   position: relative;
   padding: 15px 60px;
-  font-size: 0.73rem;
+  font-size: 0.95rem;
   font-family: "Lucida Sans Regular", sans-serif;
   color: rgb(191, 191, 191);
 }
@@ -76,7 +79,7 @@ nav ul {
 nav ul li a {
   position: relative;
   padding: 15px 60px;
-  font-size: 0.73rem;
+  font-size: 0.95rem;
   font-family: "Lucida Sans Regular", sans-serif;
   color: rgb(191, 191, 191);
 }
@@ -114,7 +117,8 @@ section {
   padding: 0;
   overflow: hidden;
   display: grid;
-  background: rgb(41, 39, 42);
+  /* background: #232931; */
+  background-image: url('assets/faqbg.png');
   grid-template-rows: 1fr 80px;
 }
 
@@ -152,8 +156,9 @@ section {
 .right-section {
   width: 100%;
   height: 100%;
-  background: yellow;
+  /* background: yellow; */
   transition: all 1s;
+  display: grid;
   grid-area: 1/1/3/2;
   clip-path: polygon(60% 0, 100% 0, 100% 100%, 70% 100%);
 }
@@ -197,17 +202,25 @@ section {
 }
 
 .slider-arrow {
-  color: white;
-  font-size: 20px;
+  /* color: white;
+  font-size: 20px; */
+  height: 34px;
 }
 
-.slider-arrow:hover {
+.right-slider-arrow {
+  /* color: white;
+  font-size: 20px; */
+  height: 34px;
+  transform: rotate(180deg);
+}
+
+.slider-arrow:hover , .right-slider-arrow:hover{
   color: white;
   cursor: pointer;
 }
 
 .active {
-  background: white;
+  background: #4ECCA3;
 }
 .event-content {
   color: white;
@@ -244,7 +257,7 @@ section {
 
 .event-content button {
   padding: 1em 3em;
-  background: orange;
+  background: rgb(78, 204, 177);
   border: none;
   border-radius: 20px;
   margin-top: 1em;
@@ -473,7 +486,7 @@ section {
 /* ABOUT US */
 
 .about-us-section {
-  width: 80%;
+  width: 90%;
   height: fit-content;
   margin: auto;
   padding: 2em 0em;
@@ -481,6 +494,7 @@ section {
 
 .about-us-section h2 {
   text-align: center;
+  color: #232931;
   font-size: 3rem;
 }
 
@@ -498,8 +512,9 @@ section {
   flex-direction: column;
   align-items: center;
   width: 30%;
-  padding: 1em 0.7em;
-  box-shadow: 10px 10px 20px 1px;
+  background: #232931;
+  padding: 1.5em 2.5em;
+  border-radius: 20px;
 }
 
 .about-us-card img {
@@ -507,12 +522,17 @@ section {
 }
 
 .about-us-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
+  color: #4ECCA3;
+  margin-bottom: 15px;
 }
 
 .about-us-card p {
+  margin-bottom: 5px;
   line-height: 1.5em;
   font-size: 1.2rem;
+  color: white;
+  text-align: justify;
 }
 
 @media (max-width: 500px) {
@@ -549,12 +569,12 @@ footer {
   /* top:0; */
   width: 90%;
   height: 100%;
-  max-width: 500px;
+  max-width: 600px;
   /* position:absolute; */
 }
 
 .footer-distributed {
-  background-color: #292c2f;
+  background-color: rgb(30, 28, 31);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -610,7 +630,7 @@ footer {
 }
 
 .footer-distributed .footer-center i {
-  background-color: #33383b;
+  background-color: #46535c;
   color: #ffffff;
   font-size: 25px;
   width: 38px;
@@ -637,12 +657,12 @@ footer {
 .footer-distributed .footer-center p span {
   display: block;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 2;
 }
 
 .footer-distributed .footer-center p a {
-  color: #5383d3;
+  color: #4ECCA3;
   text-decoration: none;
 }
 
@@ -714,4 +734,13 @@ footer {
   .footer-center {
     padding-right: 0%;
   }
+}
+
+.right-bg-image {
+  width: 100%;
+  height: 100%;
+  float: right;
+  transition: opacity 1s;
+  opacity: 0;
+  grid-area: 1/1/2/2;
 }
