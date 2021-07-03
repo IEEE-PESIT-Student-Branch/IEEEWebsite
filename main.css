@@ -13,6 +13,169 @@ body{
     background-color: #222;
     color: white;
 }
+/* NAVBAR */
+
+nav {
+    margin-top: 40px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding-left: 2em;
+    height: 75px;
+    z-index: 10;
+    position: fixed;
+    background: rgba(255, 255, 255, 0);
+    transition: all 0.6s ease;
+  }
+  nav.sticky .logo {
+    /* margin-left: 4rem; */
+    height: 68%;
+  }
+  nav.sticky {
+    margin-top: 0px;
+    top: 0px;
+    /* font-size: 0.75rem; */
+    padding-left: 2em;
+    height: 75px;
+    background: rgb(30, 28, 31);
+  }
+  nav.sticky ul li a {
+    position: relative;
+    padding: 15px 60px;
+    font-size: 0.95rem;
+    font-family: "Lucida Sans Regular", sans-serif;
+    color: rgb(191, 191, 191);
+  }
+  
+  nav div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-left: 4rem;
+    height: 68%;
+    position: relative;
+    /* transition: 0.6s; */
+  }
+  
+  nav ul {
+    margin-left: 1.5em;
+    display: flex;
+    position: relative;
+  }
+  
+  nav ul li a {
+    position: relative;
+    padding: 15px 60px;
+    font-size: 0.95rem;
+    font-family: "Lucida Sans Regular", sans-serif;
+    color: rgb(191, 191, 191);
+  }
+  .mslider {
+    display: none;
+  }
+  .checkbtn {
+    color: white;
+    font-size: 2.3rem;
+    float: right;
+    right: 25px;
+    top: 19.1px;
+    display: none;
+    position: absolute;
+    z-index: 11;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  nav ul li a:hover {
+    color: white;
+  }
+
+/* NAVBAR */
+
+nav {
+    margin-top: 40px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding-left: 2em;
+    height: 75px;
+    z-index: 10;
+    position: fixed;
+    background: rgba(255, 255, 255, 0);
+    transition: all 0.6s ease;
+  }
+  nav.sticky .logo {
+    /* margin-left: 4rem; */
+    height: 68%;
+  }
+  nav.sticky {
+    margin-top: 0px;
+    top: 0px;
+    /* font-size: 0.75rem; */
+    padding-left: 2em;
+    height: 75px;
+    background: rgb(30, 28, 31);
+  }
+  nav.sticky ul li a {
+    position: relative;
+    padding: 15px 60px;
+    font-size: 0.95rem;
+    font-family: "Lucida Sans Regular", sans-serif;
+    color: rgb(191, 191, 191);
+  }
+  
+  nav div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-left: 4rem;
+    height: 68%;
+    position: relative;
+    /* transition: 0.6s; */
+  }
+  
+  nav ul {
+    margin-left: 1.5em;
+    display: flex;
+    position: relative;
+  }
+  
+  nav ul li a {
+    position: relative;
+    padding: 15px 60px;
+    font-size: 0.95rem;
+    font-family: "Lucida Sans Regular", sans-serif;
+    color: rgb(191, 191, 191);
+  }
+  .mslider {
+    display: none;
+  }
+  .checkbtn {
+    color: white;
+    font-size: 2.3rem;
+    float: right;
+    right: 25px;
+    top: 19.1px;
+    display: none;
+    position: absolute;
+    z-index: 11;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  nav ul li a:hover {
+    color: white;
+  }
 
 /****************/
 .main-container{
