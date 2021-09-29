@@ -18,7 +18,7 @@ body{
 .main-container{
     width: 90vw;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 100px 0;
 }
 .main-container > h2{
     text-align: center;
