@@ -213,7 +213,7 @@ nav {
   
   .logo {
     margin-left: 4rem;
-    height: 68%;
+    width: 110px;
     position: relative;
     /* transition: 0.6s; */
   }
@@ -222,6 +222,7 @@ nav {
     margin-left: 1.5em;
     display: flex;
     position: relative;
+    list-style-type: none;
   }
   
   nav ul li a {
