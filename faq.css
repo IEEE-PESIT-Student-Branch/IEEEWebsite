@@ -173,6 +173,7 @@ nav {
     font-size: 0.95rem;
     font-family: "Lucida Sans Regular", sans-serif;
     color: rgb(191, 191, 191);
+    text-decoration: none;
   }
   .mslider {
     display: none;
