@@ -16,18 +16,18 @@ window.addEventListener('scroll', function () {
   msliderprops = [
     {
       color: '#419dce',
-      title: 'aaaaaa',
-      desc: 'This is description 1 for the event 1',
+      title: 'IEEE LEARNING SERIES',
+      desc: 'Resume and Profile Building',
     },
     {
       color: '#8422f3',
-      title: 'bbbbbb',
-      desc: 'This is decription 2 for the event 2',
+      title: 'KALPANA 2021',
+      desc: 'AN IEEE PESU EC CAMPUS, WIE CHAPTER EVENT',
     },
     {
       color: '#ffffffc9',
-      title: ' Speak Up',
-      desc: 'This is description 3 for the event 3',
+      title: 'IEEE LEARNING SERIES',
+      desc: 'Aspire to achieve financial freedom',
     },
   ];
   var val = 0;

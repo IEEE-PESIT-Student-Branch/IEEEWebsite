@@ -164,6 +164,7 @@ nav {
     margin-left: 1.5em;
     display: flex;
     position: relative;
+    list-style-type:none;
   }
   
   nav ul li a {
@@ -202,6 +203,37 @@ nav {
       margin-bottom: 6px;
       z-index: 11;
     }
+
+    .faq-header{
+      font-size: 1.5rem;
+    }
+
+    nav.sticky ul li a {
+      font-size: 1.1rem;
+      text-align: center;
+      padding-left: 0px;
+      margin-left:auto;
+      margin-right:auto;
+      width: 80%;
+    }
+    nav.sticky ul{
+      padding-left: 0;
+      width: 100%;
+    }
+
+    nav.sticky ul li a {
+      font-size: 1.1rem;
+      text-align: center;
+      padding-left: 0px;
+      margin-left:auto;
+      margin-right:auto;
+      width: 80%;
+    }
+    nav.sticky ul{
+      padding-left: 0;
+      width: 100%;
+    }
+
 
 nav div {
       width: 100%;
@@ -260,3 +292,4 @@ nav div {
     #check:checked ~ div ul {
       top: 0;
     }
+}
