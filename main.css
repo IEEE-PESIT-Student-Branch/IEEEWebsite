@@ -7,6 +7,8 @@
 }
 img{width: 100%}
 
+
+
 body{
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
@@ -188,7 +190,7 @@ nav {
   }
   nav.sticky .logo {
     /* margin-left: 4rem; */
-    height: 68%;
+    width:110px;
   }
   nav.sticky {
     margin-top: 0px;
