@@ -14,13 +14,14 @@ body{
     line-height: 1.5;
     background-color: #222;
     color: white;
+    background-image: url("assets/faqbg.png");
 }
 
 /****************/
 .main-container{
     width: 90vw;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 100px 0;
 }
 .main-container > h2{
     text-align: center;
@@ -233,6 +234,7 @@ nav {
     font-size: 0.95rem;
     font-family: "Lucida Sans Regular", sans-serif;
     color: rgb(191, 191, 191);
+    text-decoration: none;
   }
   .mslider {
     display: none;

@@ -22,3 +22,10 @@ function changeActivePosition(activeItem){
     }
     activeItem.classList.add('active');
 };
+
+window.addEventListener('scroll', function () {
+    var header = document.querySelector('nav');
+    var height = window.innerHeight;
+    var width = window.innerWidth;
+    header.classList.toggle('sticky', window.scrollY > 0.20 * height);
+  });
