@@ -484,7 +484,7 @@
   }
   
   /* ABOUT US */
-  
+  /*
   .about-us-section {
     width: 90%;
     height: fit-content;
@@ -552,6 +552,89 @@
       width: 90%;
       margin-bottom: 2em;
     }
+  }
+  */
+
+  .about-us-section {
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    padding: 2em 0em;
+  }
+  
+  .about-us-section h2 {
+    text-align: center;
+    color: #232931;
+    font-size: 3rem;
+  }
+
+  .card-container {
+    position: relative;
+    margin-top: 2em;
+    padding: 20px 20px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .card-container .about-us-card{
+    max-width: 400px;
+    height: 280px;
+    align-items: stretch;
+    background:rgb(30, 28, 31);
+    margin: 15px 15px 15px;
+    padding: 10px 10px;
+    display: flex;
+    border-radius: 3px;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+  }
+
+  .card-container .about-us-card:hover{
+    height:700px;
+  }
+
+  .card-container .about-us-card .about-us-image{
+    position: relative;
+    background: rgb(30, 28, 31);;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    min-width: initial;
+    width: 370px;
+    height: 300px;
+    border-radius: 4px;
+    z-index: 1;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-container .about-us-card .about-us-image img{
+    max-width: 100%;
+    border-radius: 4px;
+  }
+
+  .card-container .about-us-card .about-us-content{
+    position: relative;
+    margin-top: -100px;
+    padding: 20px 20px;
+    text-align: center;
+    color:white;
+    font-weight: 600;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    transition-delay: 0s;  
+  }
+
+  .card-container .about-us-card:hover .about-us-content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -10px;
+    transition-delay: 0.3s;
   }
   
   /* FOOTER */
