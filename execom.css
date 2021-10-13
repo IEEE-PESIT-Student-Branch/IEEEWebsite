@@ -242,6 +242,7 @@ nav ul li a:hover {
   /* STUDENT SECTION */
   .photo-card {
     width: calc(50% - 0px);
+    border-radius:50%
   }
 }
 
