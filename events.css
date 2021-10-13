@@ -148,3 +148,9 @@ nav {
       width: calc(50% - 0px);
     }
   }
+
+#center_dates{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
